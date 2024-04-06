@@ -1,8 +1,10 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Game {
     public static void main(String[] args) {
-        int hiddenNumber = 88;
+        Random rnd = new Random();
+        int hiddenNumber = rnd.nextInt(101);
         Scanner sc = new Scanner(System.in);
 
         while (true) {
